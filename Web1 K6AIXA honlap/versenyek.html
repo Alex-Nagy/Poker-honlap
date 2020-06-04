@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+<title>Versenyek</title>
+<link rel="stylesheet" href="index.css" title="alap" type="text/css">
+<link rel="alternate stylesheet" href="nagyindex.css" title="nagybetus" type="text/css">
+<script src="scripts/styleswitcher.js"></script>
+<meta charset="utf-8">
+</head>
+<body>
+<nav class="kipozicional">
+	<a href="#tartalom">Ugrás a tartalomra</a>
+	</nav>
+<header>
+<nav id="gyengenlato"><a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;"><span class="ikon"></span>Nagybetűs változat</a>
+	<a id="normalbetu" href="#" onclick="setActiveStyleSheet('alap'); return false;"><span class="ikon"></span>Normál változat</a>
+
+
+</nav>
+		<img src="header.png" width="1000" height="200" alt="logo" />
+		<nav id="menu" >
+		<ul>
+			<li><a href="index.html">A Póker története</a></li>
+			<li><a href="pokerkezek.html">Pókerkezek</a></li>
+			<li class="active"><a href="versenyek.html">Versenyek</a></li>
+		  <li><a href="hiresjatekosok.html">Híres játékosok</a></li>
+			<li><a href="kerdoiv.html">Kérdőív</a></li>
+		</ul>
+		</nav>
+		</header>
+		<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $('ul li a').click(function(){
+        $('li a').removeClass("active");
+        $(this).addClass("active");
+        });
+        });
+    </script>
+	<main id="tartalom">
+	<h1>Versenyek</h1>
+	<section>
+	  <p>Ha nem ismerősek számodra a legnagyobb pókerversenyek, ajánljuk, hogy kezdd a <strong><em>World Series of Poker</em></strong>-nél, ami a pókerversenyek szent grálja, és a hetvenes évek elejétől a versenypóker világbajnokait koronázza meg. Ma a sorozat több mint <strong>7 hétig</strong> tart és több mint <strong>50</strong> <strong>különböző</strong> <strong>versenyből</strong> áll. A póker legnagyobb nevei törtek megközelíthetetlen magaslatokba azzal, hogy world series versenyeket nyertek meg és karkötőket szereztek. Ezek a karkötők a legmagasabb teljesítmény bizonyítékai, mely a pókerversenyek világában érhető el.</p>
+		<p>Ezek a nagy pókerversenyek, melyek legtöbbje már évtizedek óta jelen van, több ezer órányi magas színvonalú szórakozást teremtettek – nem csak a pókerversenyeken részt vevők számára, de pókerrajongók milliói számára is, akik otthon nézik meg időről időre a klasszikus döntő asztali játszmákat a YouTube-on. Az egyik ilyen híres versenypillanat az 1988-as WSOP döntő asztala, ahol Johnny Chan győzte le Erik Seidel-t a verseny bajnoki címéért és a karkötőért. Ezt a jelenetet később felhasználták a Pókerarcok című filmben is (Matt Damon főszereplésével).</p>
+	  <article>
+	<h2>Versenyek:</h2>
+	<ul>
+		<li><a href="https://en.wikipedia.org/wiki/World_Series_of_Poker" target ="_blank">World Series of Poker (WSOP)</a></li>
+		<li><a href="https://en.wikipedia.org/wiki/World_Poker_Tour" target ="_blank">World Poker Tour (WPT)</a></li>
+		<li><a href="https://en.wikipedia.org/wiki/European_Poker_Tour" target ="_blank">European Poker Tour (EPT)</a></li>
+		
+	</ul>
+	<p>Ma már ezeken kívűl létezik sok online versenyek is.</p>
+	  </article>
+	<article>
+	<h2>Online versenyek:</h2>
+	<ul>
+		<li><a href="https://en.wikipedia.org/wiki/World_Championship_of_Online_Poker" target ="_blank">World Championship of Online Poker (WCOOP)</a></li>
+		<li><a href="https://en.wikipedia.org/wiki/Spring_Championship_of_Online_Poker">Spring Championship of Online Poker (SCOOP)</a></li>
+		
+	</ul>
+	</article>
+	</section>
+</main>
+	<footer><a class="link" href="index.html" target="_self"> Ugrás a kezdőlapra.</a></footer>
+	</body>
+	</html>
